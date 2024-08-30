@@ -63,56 +63,47 @@
   </head>
 
   <body class="index-page">
-    <style>
-      .navbar {
-        padding: 0.5rem 1rem; /* Adjust padding */
-      }
-      .navmenu li:first-child {
-        margin-right: 400px; /* Space after the logo */
-      }
-    </style>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li>
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center"
+      >
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
           <img
-            class="img-fluid me-3"
+            class="img-fluid"
             src="assets\img\img\logo\sscs.png"
             alt="logo"
-            style="
-              height: 70px;
-              width: auto;
-              margin-left: 40px;
-              margin-top: 10px;
-            "
           />
-        </li>
+        </a>
 
-        <li>
-          <a href="#hero" class="active">Home<br /></a>
-        </li>
-        <li class="dropdown">
-          <a href="#history"
-            ><span>About </span>
-            <i class="bi bi-chevron-down toggle-dropdown"></i
-          ></a>
+        <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#gallery">Gallery</a></li>
+            <li>
+              <a href="#hero" class="active">Home<br /></a>
+            </li>
+            <li class="dropdown">
+              <a href="#history"
+                ><span>About </span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="#gallery">Gallery</a></li>
 
-            <li><a href="#history">History</a></li>
-            <li><a href="#ourmaingoal">Our Main Goal</a></li>
-            <li><a href="#stats">SSCS in number</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#ourmaingoal">Our Main Goal</a></li>
+                <li><a href="#stats">SSCS in number</a></li>
+              </ul>
+            </li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#ourmainactivities">Recent Activities</a></li>
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#footer">Contact </a></li>
           </ul>
-        </li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#ourmainactivities">Recent Activities</a></li>
-        <li><a href="#projects">Projects</a></li>
-
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#footer">Contact </a></li>
-      </ul>
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-    </nav>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
 
     <main class="main">
       <!-- Hero Section -->
@@ -448,7 +439,7 @@
       <!-- Team Section -->
       <section id="team" class="team section section-bg dark-background">
         <!-- Section Title -->
-        <div id="teamtitle" class="container section-title" data-aos="fade-up">
+        <div id="teamtitle" class="container section-title">
           <h2>Team</h2>
           <p>Empowered Team, Lasting Impact.</p>
         </div>
@@ -456,11 +447,7 @@
 
         <div class="container">
           <div class="row gy-4">
-            <div
-              class="col-lg-3 col-md-6 d-flex align-items-stretch"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
               <div class="team-member">
                 <div class="member-img">
                   <img
@@ -490,7 +477,6 @@
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-aos="fade-up"
-              data-aos-delay="200"
             >
               <div class="team-member">
                 <div class="member-img">
@@ -522,7 +508,6 @@
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-aos="fade-up"
-              data-aos-delay="300"
             >
               <div class="team-member">
                 <div class="member-img">
@@ -555,7 +540,6 @@
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-aos="fade-up"
-              data-aos-delay="400"
             >
               <div class="team-member">
                 <div class="member-img">
@@ -587,7 +571,6 @@
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-aos="fade-up"
-              data-aos-delay="400"
             >
               <div class="team-member">
                 <div class="member-img">
@@ -619,7 +602,6 @@
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-aos="fade-up"
-              data-aos-delay="400"
             >
               <div class="team-member">
                 <div class="member-img">
@@ -651,7 +633,6 @@
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-aos="fade-up"
-              data-aos-delay="400"
             >
               <div class="team-member">
                 <div class="member-img">
@@ -683,7 +664,6 @@
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-aos="fade-up"
-              data-aos-delay="400"
             >
               <div class="team-member">
                 <div class="member-img">
@@ -715,7 +695,6 @@
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-aos="fade-up"
-              data-aos-delay="400"
             >
               <div class="team-member">
                 <div class="member-img">
@@ -735,7 +714,6 @@
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-aos="fade-up"
-              data-aos-delay="400"
             >
               <div class="team-member">
                 <div class="member-img">
@@ -759,17 +737,13 @@
       <!-- Our Main Activities Section -->
       <section id="ourmainactivities" class="main-activities section">
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-title">
           <h2>Our recent Activities</h2>
         </div>
         <!-- End Section Title -->
 
         <div class="container">
-          <div
-            class="row gy-4 isotope-container"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
+          <div class="row gy-4 isotope-container">
             <!-- Activities Item 1 -->
             <div
               class="col-lg-4 col-md-6 activities-item isotope-item filter-conference"
@@ -962,11 +936,7 @@
         class="projects section section-bg dark-background"
       >
         <!-- Section Title -->
-        <div
-          id="projectstitle"
-          class="container section-title"
-          data-aos="fade-up"
-        >
+        <div id="projectstitle" class="container section-title">
           <h2>Our Projects</h2>
           <p>Manifesting ideas, achieving reality.</p>
         </div>
@@ -974,7 +944,7 @@
 
         <div class="container">
           <div class="row gy-4">
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-6">
               <div class="project-item d-flex position-relative h-100">
                 <i class="bi bi-arrow-90deg-right icon flex-shrink-0"></i>
 
@@ -995,7 +965,7 @@
             </div>
             <!-- End project Item -->
 
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-6">
               <div class="project-item d-flex position-relative h-100">
                 <i class="bi bi-robot icon flex-shrink-0"></i>
 
@@ -1015,7 +985,7 @@
             </div>
             <!-- End project Item -->
 
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-md-6">
               <div class="project-item d-flex position-relative h-100">
                 <i class="bi bi-cpu icon flex-shrink-0"></i>
                 <div>
@@ -1034,7 +1004,7 @@
             </div>
             <!-- End project Item -->
 
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="col-md-6">
               <div class="project-item d-flex position-relative h-100">
                 <i class="bi bi-cpu-fill icon flex-shrink-0"></i>
                 <div>
@@ -1061,14 +1031,14 @@
       <!-- Faq Section -->
       <section id="faq" class="faq section">
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-title">
           <h2>Frequently Asked Questions</h2>
         </div>
         <!-- End Section Title -->
 
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-10">
               <div class="faq-container">
                 <div class="faq-item faq-active">
                   <h3>What is IEEE ?</h3>
@@ -1087,7 +1057,7 @@
                 <!-- End Faq item-->
 
                 <div class="faq-item">
-                  <h3>What is ENIS??</h3>
+                  <h3>What is ENIS?</h3>
                   <div class="faq-content">
                     <p>
                       Founded in 1983, the National School of Engineers of Sfax
