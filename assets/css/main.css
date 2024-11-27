@@ -2094,7 +2094,7 @@ section,
 .testimonials .testimonial-item {
   background-size: cover; /* Ensures the background image covers the entire area */
   background-position: center;
-  border: #e03a3c 3px solid;
+  border: #e03a3c 5px solid;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   box-sizing: content-box;
   margin: 30px 15px;
@@ -2178,11 +2178,6 @@ section,
 @media (max-width: 767px) {
   .testimonials .testimonial-wrap {
     padding-left: 0;
-  }
-
-  .testimonials .testimonial-item {
-    padding: 30px;
-    margin: 15px;
   }
 
   .testimonials .testimonial-item .testimonial-img {
